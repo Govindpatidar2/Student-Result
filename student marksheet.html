@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+    .first{
+        text-align: center;
+        background: linear-gradient(rgb(122, 250, 122),rgb(105, 229, 245));
+        color: black;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: .5px solid black;
+        box-shadow: 0px 5px 0px 5px lightblue;
+        margin-bottom: 15px;
+    }
+    .part1{
+        background: linear-gradient(rgb(90, 245, 124),rgb(25, 235, 250));
+        padding: 15px;
+        margin-left: 400px;
+        margin-right: 400px;
+        border-radius: 20px;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        word-spacing: 3px;
+    } 
+    .part1 .h2{
+        font-size: 20px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        word-spacing: 3px;
+        margin-top: 5px;
+    }
+    .part1 .inp{
+        border-radius: 5px;
+        height: 25px;
+    }
+    .part1 .mark{
+        border-radius: 5px;
+        height: 25px;
+        background-color: white;
+        width: 200px;
+        margin-bottom: 5px;
+    }
+    .part1-1{
+        text-align: center;
+    }
+    button{
+        margin-top: 10px;
+        width: 150px;
+        height: 35px;
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button:hover{
+        color: rgb(197, 187, 187);
+    }
+    input:hover{
+        background-color: rgb(241, 228, 228);
+    }
+    .part2{
+        
+        margin: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border: 15px solid black;
+        background: linear-gradient(rgb(182, 235, 232),rgb(157, 238, 164),rgb(182, 235, 232));
+        
+    }
+    .container1{
+        display: flex;
+        margin: 15px;
+        border: 2px solid black;
+    }
+    .img1{
+        margin-top: 10px;
+        margin-left: 30px;
+
+    }
+    .mid{
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+    .img2{
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    .img1 img{
+        margin-top: 60px;
+        width: 200px;
+    }
+    .img2 img{
+        width: 170px;
+    }
+    .mid .official{
+        margin-top: 50px;
+    }
+    .mid h1{
+        font-weight: 700;
+    }
+    span{
+        font-weight: 600;
+    }
+    p{
+        font-weight: 500;
+    }
+    .web{
+        color: red;
+    }
+    .part2-1{
+        border: 2px solid black;
+        margin: 15px;
+    }
+    .part2-1-1{
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgb(255, 166, 0);
+    }
+    .part2-1-1 h2{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    td{
+        font-weight: 700;
+    }
+    .part2-2-1{
+        text-align: center;
+        border: 2px solid black;
+        background-color: rgba(58, 243, 52, 0.87);
+    }
+    .part2-2{
+        border: 2px solid black;
+        margin: 15px;
+    }
+    .part2-2-1 h2{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .table2{
+        margin-bottom: 0px;
+    }
+    .table2 thead th{
+        border: 2px solid black;
+        text-align: center;
+        
+    }
+    .table2 tbody td{
+        border: 2px solid black;
+        text-align: center;
+    }
+    .table2 tbody th{
+        border: 2px solid black;
+        text-align: center;
+
+    }
+    .table2 tfoot{
+        border-bottom: 2px solid black;
+        text-align: center;
+        
+    }
+    h5{
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+    .footer{
+        display: flex;
+    }
+    .classteacher{
+        margin-left: 30px;
+    }
+    .principal{
+        margin-left: 380px;
+        padding-bottom: 20px;
+        
+    }
+    .qr{
+        margin-left: 250px;
+    }
+    h4{
+        margin-left: 20px;
+    }
+    .report .repo{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+<body>
+    <h1 class="first">...Marksheet Portal...</h1>
+    <div class="part1">
+        <h2>Enter Your Name : </h2>
+        <input type="text" id="Name" name="Name" class="inp" required>
+        <h2 class="h2">Enter Your Roll No. :</h2>
+        <input type="number" id="roll" name="roll" class="inp" required>
+        <h2 class="h2">Enter Your DOB :</h2>
+        <input type="text" id="dob1" name="dob1" class="inp" required>
+        <h2 class="h2">Enter Your Class and Section : </h2>
+        <input type="text" name="class" id="class" class="inp" required> 
+        <h2 class="h2">Enter Academic Year :</h2>
+        <input type="number" name="year" id="year" class="inp" required>
+        <h2 class="h2">Enter Your Marks :</h2>
+        <div class="part1-1">
+        <input type="number" name="hindi" id="hindi" placeholder="Enter Hindi marks here" required class="mark">
+        <input type="number" name="eng" id="eng" placeholder="Enter English marks here" required class="mark">
+        <input type="number" name="science" id="science" placeholder="Enter Science marks here" required class="mark">
+        <input type="number" name="social" id="social" placeholder="Enter Social Science marks here" required class="mark">
+        <input type="number" name="maths" id="maths" placeholder="Enter Maths marks here" required class="mark"><br>
+        <button onclick="Marksheet()">Get Your Result</button></div>
+        <h3 id="alert"></h3>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="part2">
+        <div class="container1">
+        <div class="img1">
+            <span>Registration no.  12345678</span><br>
+            <img src="https://livewireindia.com/assets/livewirelogo.png" alt="">
+        </div>
+        <div class="mid">
+        <h1>Livewire-Weupskill Indore</h1>
+        <p>1st Floor, K.R. Ahamed Sha office complex, <br>Dr. Radhakrishnan Salai,Mylapore, <br> Tamil Nadu, India. </p>
+        <p class="official">Official Website : <span class="web"> livewireindia.com </span></p></div>
+        <div class="img2">
+            <span>institute code: 1234</span><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNZlfE107E7XNL-ZBHYl1GneShbhGO16zmmQ&s" alt="">
+        </div>
+    </div> 
+    <div class="report">
+        <h1 class="repo">REPORT CARD</h1>
+    </div>
+        <div class="part2-1">
+            <div class="part2-1-1">
+                <h2>Student Details</h2>
+            </div>
+            <table class="table">
+                <tbody>
+                  <tr> 
+                    <td>Name of the Student</td>
+                    <td id="studentname"></td>
+                  </tr>
+                  <tr>                   
+                    <td>Roll No.</td>    
+                    <td id="rollno"></td>               
+                  </tr>
+                  <tr>                   
+                    <td>DOB</td>    
+                    <td id="dob"></td>               
+                  </tr>
+                  <tr>                   
+                    <td>Class </td>
+                    <td id="classname"></td>                   
+                  </tr>
+                  <tr>
+                    <td>Academic Year</td>
+                    <td id="academic"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="part2-2">
+            <div class="part2-2-1">
+                <h2>Academic Performance</h2>
+            </div>
+            <table class=" table2 table caption-top">
+                
+                <thead>
+                  <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Max Marks</th>
+                    <th scope="col">Marks Obtained</th>
+                    <th scope="col">Remark</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Hindi</td>
+                    <td>100</td>
+                    <td id="hindim"></td>
+                    <td id="remark1"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>English</td>
+                    <td>100</td>
+                    <td id="englishm"></td>
+                    <td id="remark2"></td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td id="sciencem"></td>
+                    <td id="remark3"></td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Social Science</td>
+                    <td>100</td>
+                    <td id="socialm"></td>
+                    <td id="remark4"></td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Mathematics</td>
+                    <td>100</td>
+                    <td id="mathsm"></td>
+                    <td id="remark5"></td>
+
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th class="tot">GRAND TOTAL</th>
+                        <th class="tot">500</th>
+                        <th id="total"></th>
+                        <th id="per">Per :</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>GRADE</th>
+                        <th id="grade"></th>
+                    </tr>
+                </tfoot>
+              </table>
+        </div>
+        <h5 id="last"></h5>
+        <h4>Date : .....................</h4>
+        <div class="footer">
+            <div class="classteacher">
+                <img width="150px" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Sachin_Tendulkar_Signature.svg" alt="">
+                <h4>Class Teacher Sign.</h4>
+            </div>
+            <div class="qr">
+                <img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwezRRmbnUqJh9gH3bwbnIJjt7l5nCj21sA&s" alt="">
+            </div>
+            <div class="principal">
+                <img width="100px" src="stamp2.jpg" alt="">
+                <h4>Principal</h4>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var num1,num2,num3,num4,num5,num6 ,num7,num8,num9;
+        function input(){
+            num1=document.getElementById('Name').value;
+            num2=document.getElementById('roll').value;
+            num3=document.getElementById('class').value;
+            num4=document.getElementById('year').value;
+            num5=document.getElementById('hindi').value;
+            num6=document.getElementById('eng').value;
+            num7=document.getElementById('science').value;
+            num8=document.getElementById('social').value;
+            num9=document.getElementById('maths').value;
+            num10=document.getElementById('dob1').value;
+            num2=Number.parseInt(num2)
+            num4=Number.parseInt(num4)
+            num5=Number.parseInt(num5)
+            num6=Number.parseInt(num6)
+            num7=Number.parseInt(num7)
+            num8=Number.parseInt(num8)
+            num9=Number.parseInt(num9)
+        }
+        function Marksheet(){
+            input()
+            let a = document.getElementById('studentname')
+            a.innerHTML=num1;
+            let b= document.getElementById('rollno')
+            b.innerHTML=num2;
+            let z= document.getElementById('dob')
+            z.innerHTML=num10;
+            let c = document.getElementById('classname')
+            c.innerHTML=num3;
+            let d = document.getElementById('academic')
+            d.innerHTML=num4;
+            let e = document.getElementById('hindim')
+            e.innerHTML=num5;
+            let f = document.getElementById('englishm')
+            f.innerHTML=num6;
+            let g = document.getElementById('sciencem')
+            g.innerHTML=num7;
+            let h = document.getElementById('socialm')
+            h.innerHTML=num8;
+            let i = document.getElementById('mathsm')
+            i.innerHTML=num9;
+            let sum= num5+num6+num7+num8+num9;
+            let o = document.getElementById('total')
+            o.innerHTML=sum;
+            let percentage=sum/5;
+            let p=document.getElementById('per')
+            p.innerHTML="Per- "+percentage+"%" 
+            {
+                if(sum>=501){
+                    o.innerHTML=""
+                    p.innerHTML=""
+                    
+                }
+            }          
+             {
+            if(num5>=33){
+                let j=document.getElementById('remark1')
+                j.innerHTML="PASS"
+            }
+            else{
+                let j=document.getElementById('remark1')
+                j.innerHTML="FAIL"
+            }
+        }
+            {
+            if(num6>=33){
+                let k=document.getElementById('remark2')
+                k.innerHTML="PASS"
+            }
+            else{
+                let j
+                k=document.getElementById('remark2')
+                k.innerHTML="FAIL"
+            }
+        }
+            {
+            if(num7>=33){
+                let l=document.getElementById('remark3')
+                l.innerHTML="PASS"
+            }
+            else{
+                let l=document.getElementById('remark3')
+                l.innerHTML="FAIL"
+            }
+        }
+            {
+            if(num8>=33){
+                let m=document.getElementById('remark4')
+                m.innerHTML="PASS"
+            }
+            else{
+                let m=document.getElementById('remark4')
+                m.innerHTML="FAIL"
+            }
+        }
+            {
+            if(num9>=33){
+                let n=document.getElementById('remark5')
+                n.innerHTML="PASS"
+            }
+            else{
+                let n=document.getElementById('remark5')
+                n.innerHTML="FAIL"
+            }
+        }
+            if(percentage<=32){
+                let q=document.getElementById('grade')
+                q.innerHTML="F"
+                let w=document.getElementById('last')
+                w.innerHTML="Sorry, You have Failed, better luck next time..."
+            }
+            if(percentage<=40 && percentage>32){
+                let r=document.getElementById('grade')
+                r.innerHTML="E"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..." 
+            }
+            if(percentage<=50 && percentage>=41){
+                let s=document.getElementById('grade')
+                s.innerHTML="D"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage<=60 && percentage>=51){
+                let t=document.getElementById('grade')
+                t.innerHTML="C"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage<=70 && percentage>=61){
+                let u=document.getElementById('grade')
+                u.innerHTML="B"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage<=80 && percentage>=71){
+                let v=document.getElementById('grade')
+                v.innerHTML="B+"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage<=90 && percentage>=81){
+                let x=document.getElementById('grade')
+                x.innerHTML="A"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage<=100 && percentage>=91){
+                let y=document.getElementById('grade')
+                y.innerHTML="A+"
+                let w=document.getElementById('last')
+                w.innerHTML="Congratulations, You have passed, we wish you a bright future..."
+            }
+            if(percentage>=101){
+                let z=document.getElementById("grade")
+                z.innerHTML=""
+                let a1=document.getElementById('alert')
+                a1.innerHTML="pls enter correct information"
+                w.innerHTML=""
+            }
+        }
+    </script>
+</body>
+</html>
